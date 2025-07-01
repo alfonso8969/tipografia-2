@@ -14,11 +14,99 @@
     <!-- estilos css comunes a los ejemplos -->
     <link rel="stylesheet" href="css/estilos-comunes.css">
 
+        <!-- estilos css tipográficos del ejemplo -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
     <!-- Para simplificar esta práctica inserta aquí mismo tu estilos CSS  -->
     <style>
+
+        /* artivulo */
+        .article-header {
+            text-align: start;
+            padding: 0px;
+            margin: 3px;
+        }
+
+        .article-title {
+            font-size: 2.8rem;
+            font-family: 'Raleway',sans-serif;
+            /* font-stretch: semi-condensed; */
+            font-weight: 600;
+            color: #508012;
+            margin: -5px 0px 22px 0px;
+        }
+
+        .article-excerpt {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: -12px;
+            color: #131212;
+        }
+
+        .article-cite {
+            text-align: end;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .7rem;
+            font-weight: 400;
+            color: #131212;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* articulo de contenido */
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
         .destacado {
-            padding: 1.5em;
+            padding: 4.5em;
+            display: flex;
+            justify-content: center;
             background: url('imagenes/plate.jpg') 0/cover;
+        }
+
+        .destacado img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .destacado p {
+            text-align: center; 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 2.8rem;
+            padding: 15px 20px;
+            max-width: 90%;
+            color: #eee4e4;
+            text-align: start;
+            line-height: 4.5rem;
+            background-color: rgba(0, 0, 0, .6);
+        }
+
+        .texto-justificado {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: lighter;
+            font-size: 1.0rem;
+            margin: 10px 0;
+            text-align: justify;
+            line-height: 1.4rem;
+            word-spacing: 0.3em;
+            margin: 20px;
+        }
+
+        .cuadro-verde {
+            color: #f5efef;
+            background-color: #508012;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 50px;
+            border-radius: 5px;
+            word-spacing: -0.2em;
         }
     </style>
 
@@ -74,11 +162,11 @@
              ****************************************************-->
 
             <article>
-                <header>
-                    <h2>Voluptates fugiat </h2>
-                    <p>Lorem ipsum dolor sit amet ducimus itaque adipisicing elit. Animi
+                <header class="article-header">
+                    <h2 class="article-title">Voluptates fugiat </h2>
+                    <p class="article-excerpt">Lorem ipsum dolor sit amet ducimus itaque adipisicing elit. Animi
                         reprehenderit</p>
-                    <p>magnam adipisci</p>
+                    <p class="article-cite">magnam adipisci</p>
                 </header>
 
                 <div>
@@ -86,23 +174,23 @@
                         <p>Ipsa aliquam facillis</p>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nulla dicta! Repellendus
+                    <p class="texto-justificado">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nulla dicta! Repellendus
                         consectetur, ut delectus fugit esse impedit veritatis beatae, enim minima commodi mollitia eos
                         quibusdam est. Eaque earum est quasi doloribus debitis ratione placeat repudiandae, xcepturi cum
                         magnam beatae, labore deleniti. Minima doloremque quae voluptas?</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem quisquam repellat
+                    <p class="texto-justificado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem quisquam repellat
                         ipsam cum iusto. Illum, autem. Atque veniam consequuntur praesentium fugiat quidem.</p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti nobis
+                    <p class="texto-justificado cuadro-verde">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti nobis
                         dignissimos ex nam
                         sunt reprehenderit assumenda fugiat aliquid voluptates</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim provident deleniti
+                    <p class="texto-justificado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim provident deleniti
                         delectus voluptas, ad, nostrum nobis inventore magnam adipisci, perferendis non cupiditate
                         voluptate! Nostrum ad hic molestias sapiente eius ipsam ab sit voluptate recusandae!</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consectetur nobis nesciunt
+                    <p class="texto-justificado">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consectetur nobis nesciunt
                         molestiae saepe officiis vel alias ullam neque.</p>
                 </div>
             </article>

@@ -1,125 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práctica de color y textos</title>
 
     <!-- reset de navegadores -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
 
     <!-- fuentes -->
 
-
     <!-- estilos css comunes a los ejemplos -->
-    <link rel="stylesheet" href="css/estilos-comunes.css">
+    <link rel="stylesheet" href="css/estilos-comunes.css" />
+
+    <!-- estilos css tipográficos del ejemplo -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
 
     <!-- Para simplificar esta práctica inserta aquí mismo tu estilos CSS  -->
-     <style>
-     
+    <style>
+      /* Estilos para el header principal */
+      .article-header {
+        text-align: center;
+        padding: 0px;
+        margin: 3px;
+      }
+
+      .article-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        letter-spacing: 11px;
+        font-size: 4rem;
+        margin-top: -9px;
+      }
+
+      .article-excerpt {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        margin-top: -42px;
+      }
+
+      .article-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .article-text {
+        background-color: rgb(32, 30, 30);
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        width: 100%;
+        max-width: 800px;
+        color: #eee4e4;
+        padding: 25px;
+        line-height: 1.4rem;
+        word-spacing: 0.3em;
+      }
+
+      .article-figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0;
+      }
+
+      .article-figure img {
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .article-figcaption {
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #131212;
+        margin-top: 10px;
+        align-self: self-start;
+      }
+
+      .article-paragraph {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.0rem;
+        margin: 10px 0;
+        text-align: justify;
+      }
+
+      .article-paragraph.first:first-letter {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        color: #130e0e;
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <header class="header-principal">
-        <h1>Practica de color y textos</h1>
-        <nav>
-            <ul class="flex">
-                <li>
-                    <a href="ejemplo-01.html">Ejemplo 01</a>
-                </li>
+      <h1>Practica de color y textos</h1>
+      <nav>
+        <ul class="flex">
+          <li>
+            <a href="ejemplo-01.html">Ejemplo 01</a>
+          </li>
 
-                <li>
-                    <a href="ejemplo-02.html">Ejemplo 02</a>
-                </li>
+          <li>
+            <a href="ejemplo-02.html">Ejemplo 02</a>
+          </li>
 
-                <li>
-                    <a href="ejemplo-03.html">Ejemplo 03</a>
-                </li>
+          <li>
+            <a href="ejemplo-03.html">Ejemplo 03</a>
+          </li>
 
-                <li>
-                    <a href="ejemplo-04.html">Ejemplo 04</a>
-                </li>
-
-            </ul>
-        </nav>
+          <li>
+            <a href="ejemplo-04.html">Ejemplo 04</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="ancho-maximo">
-        <section class="contenedor-ejemplos flex">
-            <header>
-                <h2>Ejemplo 01</h2>
-                <p>
-                    <small>Debes conseguir <b>aproximadamente</b> el resultado de la imagen que aparece a la
-                        derecha.</small>
+      <section class="contenedor-ejemplos flex">
+        <header>
+          <h2>Ejemplo 01</h2>
+          <p>
+            <small
+              >Debes conseguir <b>aproximadamente</b> el resultado de la imagen
+              que aparece a la derecha.</small
+            >
 
-                    <small class="contenedor-ejemplos__nota">Aunque no lo hayamos visto oficialmente puedes emplear las
-                        propiedades <b>margin, margin-top, margin-bottom, margin-left, margin-right, padding,
-                            padding-top, padding-bottom,
-                            padding-left, padding-right</b> para crear separaciones en los elementos </small>
+            <small class="contenedor-ejemplos__nota"
+              >Aunque no lo hayamos visto oficialmente puedes emplear las
+              propiedades
+              <b
+                >margin, margin-top, margin-bottom, margin-left, margin-right,
+                padding, padding-top, padding-bottom, padding-left,
+                padding-right</b
+              >
+              para crear separaciones en los elementos
+            </small>
 
-                    <small class="contenedor-ejemplos__nota">Investiga en el PDF del temario sobre el <b>pseudoelemento
-                            ::first-letter</b> para poder generar la letra capitular de uno de los párrafos </small>
-                </p>
-                <p class="ejemplo-familia"><b>Familias de fuentes:</b> Open Sans y Roboto.</p>
-            </header>
+            <small class="contenedor-ejemplos__nota"
+              >Investiga en el PDF del temario sobre el
+              <b>pseudoelemento ::first-letter</b> para poder generar la letra
+              capitular de uno de los párrafos
+            </small>
+          </p>
+          <p class="ejemplo-familia">
+            <b>Familias de fuentes:</b> Open Sans y Roboto.
+          </p>
+        </header>
 
-            <!-- 
+        <!-- 
              En esta zona puedes incluir estilos de clase o ID 
              *************************************************
              ****************************************************-->
 
-            <article>
-                <header>
-                    <h2>Quidem</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                        reprehenderit</p>
-                </header>
+        <article>
+          <header class="article-header">
+            <h2 class="article-title">Quidem</h2>
+            <p class="article-excerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              reprehenderit
+            </p>
+          </header>
 
-                <div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, obcaecati? Labore officiis
-                            esse,
-                            doloribus soluta, nobis voluptas aut in ipsa aliquam accusamus culpa necessitatibus facilis.
-                            Enim adipisci amet quod beatae accusamus cum asperiores?</p>
-                    </div>
+          <div class="article-content">
+            <div class="article-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                obcaecati? Labore officiis esse, doloribus soluta, nobis
+                voluptas aut in ipsa aliquam accusamus culpa necessitatibus
+                facilis. Enim adipisci amet quod beatae accusamus cum
+                asperiores?
+              </p>
+            </div>
 
-                    <figure>
-                        <img class="max-100x100" src="imagenes/city.webp" alt="bla bla descripción de imagen">
+            <figure class="article-figure">
+              <img
+                class="max-100x100"
+                src="imagenes/city.webp"
+                alt="bla bla descripción de imagen"
+              />
 
-                        <figcaption>Bruce Glikas</figcaption>
-                    </figure>
+              <figcaption class="article-figcaption">Bruce Glikas</figcaption>
+            </figure>
 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates,
-                        minima quam voluptatibus maxime, voluptatem repudiandae cumque voluptas, maiores assumenda
-                        asperiores eligendi tempora ad? Distinctio soluta labore alias voluptates eligendi rem
-                        necessitatibus voluptas!</p>
+            <p class="article-paragraph first">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae voluptates, minima quam voluptatibus maxime, voluptatem
+              repudiandae cumque voluptas, maiores assumenda asperiores eligendi
+              tempora ad? Distinctio soluta labore alias voluptates eligendi rem
+              necessitatibus voluptas!
+            </p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti nobis dignissimos ex nam
-                        sunt reprehenderit assumenda fugiat aliquid voluptates autem a laudantium, ducimus itaque
-                        aspernatur. Natus, culpa ad!</p>
+            <p class="article-paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+              deleniti nobis dignissimos ex nam sunt reprehenderit assumenda
+              fugiat aliquid voluptates autem a laudantium, ducimus itaque
+              aspernatur. Natus, culpa ad!
+            </p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim provident deleniti
-                        delectus voluptas, ad, nostrum nobis inventore magnam adipisci, perferendis non cupiditate
-                        voluptate! Nostrum ad hic molestias sapiente eius ipsam ab sit voluptate recusandae!</p>
-                </div>
-            </article>
+            <p class="article-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              enim provident deleniti delectus voluptas, ad, nostrum nobis
+              inventore magnam adipisci, perferendis non cupiditate voluptate!
+              Nostrum ad hic molestias sapiente eius ipsam ab sit voluptate
+              recusandae!
+            </p>
+          </div>
+        </article>
 
-            <!-- 
+        <!-- 
              *************************************************
              ****************************************************
              FIN .......
              En esta zona puedes incluir estilos de clase o ID 
              -->
 
-            <div class="img-ejemplo">
-                <img width="576" src="imagenes/ejemplo-01.jpg" alt="">
-            </div>
-        </section>
+        <div class="img-ejemplo">
+          <img width="576" src="imagenes/ejemplo-01.jpg" alt />
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
