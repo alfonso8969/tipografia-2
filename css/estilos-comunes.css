@@ -1,0 +1,135 @@
+/* *************************************************
+********Estilos para practica de color y textos******
+
+🛇 NO USAR ESTA HOJA DE ESTILOS.
+************************************************** */
+
+
+/* ESTILOS COMUNES */
+* {
+    box-sizing: border-box;
+}
+
+.max-100x100 {
+    max-width: 100%;
+}
+
+/* ESTRUCTURA */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ancho-maximo {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* CABECERA */
+.header-principal {
+    padding: 4em;
+    background: #222222;
+    color: #c6c6c6;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header-principal h1 {
+    font-size: clamp(2rem, 5dvw, 5rem);
+}
+
+.header-principal ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-principal ul.flex {
+    justify-content: center;
+    gap: 2em;
+}
+
+.header-principal nav a {
+    color: #c6c6c6;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.header-principal nav a:hover {
+    color: #bef41a;
+}
+
+/* EJEMPLOS */
+
+.contenedor-ejemplos {
+    margin: 2em 0;
+}
+
+.contenedor-ejemplos > header {
+    padding-left: 9dvw;
+    padding-right: 9dvw;
+    background: #dedede;
+    font-family: sans-serif;
+    line-height: 1.4em;
+}
+
+.contenedor-ejemplos section header h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 2dvw, 3rem);
+}
+
+.contenedor-ejemplos section header h2 + p {
+    margin: 0.5em 0;
+}
+
+.contenedor-ejemplos.flex {
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.contenedor-ejemplos.flex > header {
+    margin-bottom: 2em;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.contenedor-ejemplos > * {
+    padding: 2em;
+    flex-basis: 48%;
+    border: 1px solid gray;
+}
+
+.contenedor-ejemplos__nota {
+    padding: 0.5em;
+    display: block;
+    margin: 1em 0;
+    background: #FFF;
+}
+
+
+/* mediaqueries */
+
+@media screen and (max-width:900px) {
+    .header-principal {
+        padding: 1em;
+    }
+
+    .header-principal nav ul.flex {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .header-principal nav a {
+        font-size: 1rem;
+    }
+
+    .contenedor-ejemplos > * {
+        flex-basis: 100%;
+    }
+
+    .img-ejemplo {
+        margin-top: 2em;
+    }
+
+
+}

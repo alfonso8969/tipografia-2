@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de color y textos</title>
+
+    <!-- reset de navegadores -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- fuentes -->
+
+
+    <!-- estilos css comunes a los ejemplos -->
+    <link rel="stylesheet" href="css/estilos-comunes.css">
+
+    <!-- Para simplificar esta práctica inserta aquí mismo tu estilos CSS  -->
+    <style>
+        .contenedor-articulo header {
+            padding: 2em 3em;
+            background: url('imagenes/inteligencia_artificial.jpg') center/cover;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <h1>Practica de color y textos</h1>
+        <nav>
+            <ul class="flex">
+                <li>
+                    <a href="ejemplo-01.html">Ejemplo 01</a>
+                </li>
+
+                <li>
+                    <a href="ejemplo-02.html">Ejemplo 02</a>
+                </li>
+
+                <li>
+                    <a href="ejemplo-03.html">Ejemplo 03</a>
+                </li>
+
+                <li>
+                    <a href="ejemplo-04.html">Ejemplo 04</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="ancho-maximo">
+        <section class="contenedor-ejemplos flex">
+            <header>
+                <h2>Ejemplo 03</h2>
+                <p>
+                    <small>Debes conseguir <b>aproximadamente</b> el resultado de la imagen que aparece a la
+                        derecha.</small>
+
+                    <small class="contenedor-ejemplos__nota">Aunque no lo hayamos visto oficialmente puedes emplear las
+                        propiedades <b>margin, margin-top, margin-bottom, margin-left, margin-right, padding,
+                            padding-top, padding-bottom,
+                            padding-left, padding-right</b> para crear separaciones en los elementos </small>
+
+                    <small class="contenedor-ejemplos__nota">Utiliza la propiedad <b>mix-blend-mode </b>para conseguir
+                        que las imágenes que acompañan a los textos largos queden con el tono de fondo del
+                        contenedor</small>
+
+                    <small class="contenedor-ejemplos__nota">Haz que mientras sitúas el ratón sobre las imágenes a las
+                        que has aplicado la propiedad <b>mix-blend-mode </b> estas imágenes queden con su modo de color
+                        normal </small>
+
+                </p>
+                <p class="ejemplo-familia"><b>Familias de fuentes:</b> Mulish y Oswald</p>
+            </header>
+
+            <!-- 
+             En esta zona puedes incluir estilos de clase o ID 
+             *************************************************
+             ****************************************************-->
+
+            <article class="contenedor-articulo">
+                <header>
+                    <p>
+                        Ingeniería y Tecnología
+                    </p>
+                    <h2>Etica en la inteligencia artificial</h2>
+
+                </header>
+
+                <div>
+
+
+                    <div>
+                        <h3>Las consecuencias negativas</h3>
+                        <p>La presencia de la inteligencia artificial (IA) es cada vez mayor, pero su desarrollo tiene
+                            una
+                            cara B: la IA puede generar consecuencias negativas para los individuos y para la sociedad,
+                            y
+                            ahí es donde entra en juego la ética en la inteligencia artificial. Un mal uso de la IA
+                            puede
+                            incrementar las desigualdades, o un algoritmo mal programado puede significar la
+                            discriminación
+                            de una persona en la toma de una decisión (por ejemplo, que se le deniegue un seguro
+                            médico).
+                        </p>
+
+                        <figure>
+                            <img title="Aspecto de la imagen original" width="250" src="imagenes/ai-1.jpg"
+                                alt="bla bla descripción de imagen">
+                            <figcaption>Creación de Peter Thomson</figcaption>
+                        </figure>
+                    </div>
+
+                    <div>
+                        <h3>Aprendizaje, percepción, planificación...</h3>
+                        <p>Los asistentes de voz, las búsquedas predictivas en Google, las recomendaciones de productos
+                            en
+                            tiendas online, los chatbots, la domótica o los mapas son algunos ejemplos en nuestra vida
+                            cotidiana en los que la inteligencia artificial está implicada. Esto es posible porque la IA
+                            es
+                            capaz de procesar datos e información de una forma similar a la inteligencia humana. Los
+                            sistemas de inteligencia artificial abarcan, por tanto, aspectos como el razonamiento, el
+                            aprendizaje, la percepción, la planificación, la predicción o el control.</p>
+
+                        <figure>
+                            <img title="Aspecto de la imagen original" width="250" src="imagenes/ai-2.jpg"
+                                alt="bla bla descripción de imagen">
+                            <figcaption>Creación de Ally McBeal</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 
+             *************************************************
+             ****************************************************
+             FIN .......
+             En esta zona puedes incluir estilos de clase o ID 
+             -->
+
+            <div class="img-ejemplo">
+                <img width="576" src="imagenes/ejemplo-03.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
