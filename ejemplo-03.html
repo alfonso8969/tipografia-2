@@ -25,35 +25,39 @@
 
       /*  Articulo */
       .article-header {
-        height: 266px;
-        width: 537px;
-        margin-left: 3px;
+        height: 265px;
+        width: 97%;
+        margin-left: 8px;
       }
 
       .article-title {
-        font-family: "Roboto", sans-serif;
-        background: #1a2cd4;
-        background: rgb(18 68 217) 0%;
-        font-weight: 700;
-        font-size: 2.4em;
+        font-family: "Oswald", sans-serif;
+        background: linear-gradient(
+          to right,
+          rgba(28, 10, 194, 1.56),
+          rgba(16, 161, 197, 1.56),
+          rgba(8, 71, 207, 1.56)
+        );
+        line-height: 2.5rem;
+        font-size: 2.2rem;
         margin-bottom: 5px;
         color: #fff;
         margin-top: -23px;
-        padding: 21px 12px;
-        word-wrap: break-word;
-        text-shadow: 6px 6px 3px black;
+        padding: 23px 12px;
+        text-shadow: -6px 6px 3px black;
+        word-spacing: 0.5rem;
       }
 
       .article-title-paragraph {
-        font-family: "Roboto", sans-serif;
+        font-family: "Mulish", sans-serif;
         background-color: #1755d98f;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 0.8em;
         color: #fff;
         margin-top: 0;
         padding: 24px 16px;
         text-transform: uppercase;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.1em;
       }
 
       .article-content {
@@ -65,13 +69,14 @@
       }
 
       .article-text h3 {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        font-size: 1.8rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
         margin-bottom: 10px;
         color: #fff;
         text-shadow: 2px 2px 2px black;
-        text-align: center;
+        text-align: start;
+        line-height: 1em;
       }
 
       .article-image {
@@ -80,28 +85,58 @@
       }
 
       .article-text {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        font-size: 1.2rem;
-        width: 100%;
+        font-family: "Mulish", sans-serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+        width: 98%;
         max-width: 800px;
         color: #eee4e4;
-        padding: 25px;
-        line-height: 1.4rem;
+        padding: 25px 25px;
+        line-height: 1.6rem;
         word-spacing: 0.3em;
       }
 
+      .img-article__caption {
+        font-family: "Mulish", sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: #fff;
+        margin-top: 2px;
+      }
+
       .first {
-        background-color: rgb(32, 30, 30);
+        background-color: #27272a;
       }
 
       .second {
-        background-color: rgb(36, 109, 219);
+        background-color: #084db5;
       }
 
-      .img-article {
+      .image__first {
+        mix-blend-mode: multiply;
+      }
+
+      .image__second {
+        mix-blend-mode: multiply;
+      }
+      
+      .img-article__first {
         margin: 0px 0;
         text-align: end;
+        filter: grayscale(100%);
+      }
+
+      .img-article__second {
+        margin: 0px 0;
+        text-align: start;
+      }
+
+      .image__first:hover {
+        mix-blend-mode: normal;
+      }
+
+      .image__second:hover {
+        mix-blend-mode: normal;
       }
     </style>
   </head>
@@ -193,8 +228,9 @@
                 ejemplo, que se le deniegue un seguro médico).
               </p>
 
-              <figure class="img-article">
+              <figure class="img-article__first">
                 <img
+                  class="image__first"
                   title="Aspecto de la imagen original"
                   width="250"
                   src="imagenes/ai-1.jpg"
@@ -220,8 +256,9 @@
                 planificación, la predicción o el control.
               </p>
 
-              <figure class="img-article">
+              <figure class="img-article__second">
                 <img
+                  class="image__second"
                   title="Aspecto de la imagen original"
                   width="250"
                   src="imagenes/ai-2.jpg"
