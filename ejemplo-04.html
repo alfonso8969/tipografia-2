@@ -10,13 +10,95 @@
     <link rel="stylesheet" href="css/normalize.css">
 
     <!-- fuentes -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap"
+        rel="stylesheet">
 
     <!-- estilos css comunes a los ejemplos -->
     <link rel="stylesheet" href="css/estilos-comunes.css">
 
     <!-- Para simplificar esta práctica inserta aquí mismo tu estilos CSS  -->
+    <style>
+        /* ESTILOS GENERALES */
+        body {
+            font-family: "Petrona", serif;
+            color: #242424;
+        }
+  
+        .contenedor-articulo a {
+            color: #242424;
+        }
 
+        figure{
+            margin: 0;
+        }
+
+        figcaption {
+            text-transform: uppercase;
+            font-size: 0.70rem;
+        }
+
+
+
+        /* ARTICULO */
+        
+        /* header el artículo */
+        .miga-pan {
+            text-align: center;
+        }
+
+        .articulo-autores {
+            text-transform: uppercase;
+            font-size: 0.70rem;
+        }
+
+
+        .contenedor-articulo header {
+            text-align: center;
+        }
+
+        .contenedor-articulo header h3 {
+            margin-top: 0.6em;
+            margin-bottom: 0.6em;
+            font-size: 3rem;
+            line-height: 1.1em;
+            font-weight: normal;
+        }
+
+        /* otros header */
+        .articulo-intro {
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.2em;
+        }
+
+        /* cuerpo */
+        .articulo-cuerpo {
+            margin-top: 3em;
+            margin-right: 4rem;
+            margin-left: 4rem;
+        }
+
+        .articulo-cuerpo p {
+            font-size: 1.18rem;
+            line-height: 1.4em;
+        }
+
+        /* citas */
+        .cita {
+            text-align: center;
+            font-size: 1.75rem;
+            line-height: 1.2em;
+        }
+
+        .cita blockquote{
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-family: "Playwrite AU SA", serif;
+        }
+    </style>
 
 </head>
 
@@ -42,7 +124,7 @@
                 </li>
 
             </ul>
-        </nav>
+        </nav> 
         </nav>
     </header>
 
@@ -54,10 +136,9 @@
                     <small>Debes conseguir <b>aproximadamente</b> el resultado de la imagen que aparece a la
                         derecha.</small>
 
-                    <small class="contenedor-ejemplos__nota">Aunque no lo hayamos visto oficialmente puedes emplear las
-                        propiedades <b>margin, margin-top, margin-bottom, margin-left, margin-right, padding,
-                            padding-top, padding-bottom,
-                            padding-left, padding-right</b> para crear separaciones en los elementos </small>
+                        <small class="contenedor-ejemplos__nota">Aunque no lo hayamos visto oficialmente puedes emplear las
+                            propiedades <b>margin, margin-top, margin-bottom, margin-left, margin-right, padding, padding-top, padding-bottom,
+                                padding-left, padding-right</b> para crear separaciones en los elementos </small>
                 </p>
                 <p class="ejemplo-familia"><b>Familias de fuentes:</b> Playwrite AU SA y Petrona.</p>
             </header>
@@ -67,23 +148,24 @@
              *************************************************
              ****************************************************-->
 
-            <article>
+            <article class="contenedor-articulo">
                 <header>
-                    <div>
+                    <div class="miga-pan">
                         <a href="#">Amet</a> > <a href="#">Voluptates</a>
                     </div>
 
                     <h3>¿Lorem ipsum dolor sit amet?</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,
+                    <p class="articulo-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,
                         autem. Natus temporibus magni ducimus Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
 
-                    <p>Por <a href="https://www.elle.com/es/author/15258/susana-fuentes" target="_blank" rel="noopener noreferrer">Susana Fuentes
+                    <p class="articulo-autores">Por <a href="https://www.elle.com/es/author/15258/susana-fuentes"
+                            target="_blank">Susana Fuentes
                         </a>. <b>Producción:</b> zissou. <b>Realizadores:</b> T. Mayor y S. Condado. <b>Fotos:</b> P.
                         Sarabia.</p>
                 </header>
 
-                <div>
+                <div class="articulo-cuerpo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores accusamus quisquam
                         illum aliquid, rerum, officia assumenda <strong>molestiae ea reiciendis</strong>, in obcaecati
                         dignissimos
@@ -107,7 +189,7 @@
                         suscipit dolor, voluptatem nam veritatis quis totam optio corporis aliquid, praesentium ducimus
                         ipsam minima fugiat veniam! Ullam, quo assumenda!</p>
 
-                    <div>
+                    <div class="cita">
                         <img src="imagenes/quote.svg" height="30" width="auto" alt="">
                         <blockquote>
                             "Acabas de empezar una pequeña historia"
@@ -116,14 +198,13 @@
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsa libero perspiciatis ex! Cum
                         maiores consequuntur laborum, velit tempora libero sunt, inventore quisquam eaque placeat
-                        perspiciatis quod nihil rem officiis laudantium <strong>nemo numquam </strong> cumque quaerat
-                        distinctio, facilis
+                        perspiciatis quod nihil rem officiis laudantium  <strong>nemo numquam </strong> cumque quaerat distinctio, facilis
                         explicabo <strong>perferendis</strong> nesciunt? Dolorem ipsa amet hic.</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste, molestiae ex, nam fugit
-                        fuga dolor <strong>enim porro</strong> possimus tempora debitis id accusantium rerum
-                        reprehenderit voluptatum
+                        fuga dolor <strong>enim porro</strong> possimus tempora debitis id accusantium rerum reprehenderit voluptatum
                         temporibus amet.</p>
+
 
                 </div>
             </article>
@@ -136,7 +217,7 @@
              -->
 
             <div class="img-ejemplo">
-                <img width="576" src="imagenes/ejemplo-04.jpg" alt="">
+                <img src="imagenes/ejemplo-04.jpg"  class="max-100x100" alt="">
             </div>
         </section>
     </main>
